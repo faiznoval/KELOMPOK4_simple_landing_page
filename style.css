@@ -1,7 +1,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-body {
-     font-family: "Poppins", sans-serif;
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     scroll-behavior: smooth;
 }
 
+
+.container {
+     max-width: 1210px;
+     width: 100%;
+     margin: 0 auto;
+}
+
+body {
+     width: 100%;
+     font-family: "Poppins", sans-serif;
+     height: 100dvh;
+     background-color: white;
+}
+
+main {
+     max-width: auto;
+     width: 100%;
+     margin: 0 auto;
+     overflow: hidden;
+}
+
+header {
+     width: 100%;
+     background-color: white;
+     position: fixed;
+     box-shadow: 0 10px 10px rgb(232, 228, 228);
+
+}
+
+.navbar-wrapper {
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 20px 0;
+
+}
+
+.navbar-wrapper h1 {
+     font-size: 21px;
+}
+
+.navbar-wrapper ul {
+     display: flex;
+     align-items: center;
+     gap: 24px;
+     list-style-type: none;
+     margin-left: auto;
+}
+
+.navbar-wrapper ul li a {
+     text-decoration: none;
+     color: black;
+     font-size: 16px;
+}
+
+.navbar-wrapper ul li a:hover {
+     color: #3A86FF;
+}
+
+.wrapper-button-navbar {
+     margin-left: 32px;
+}
+
+.wrapper-button-navbar button {
+     background: transparent;
+     padding: 10px 16px;
+     border: 2px solid #2203E4;
+     color: #2203E4;
+     font-size: 16px;
+     cursor: pointer;
+}
+
+.wrapper-button-navbar button:hover {
+     background: #1c02c9;
+     color: white;
+     border: 2px solid #1c02c9;
+     transition: 0.2s;
+}
+
+.hero-section {
+     padding-top: 90px;
+     width: 100%;
+     background-color: #fff;
+}
+
+.hero-wrapper {
+     display: flex;
+     align-items: center;
+     gap: 48px;
+     padding: 60px 0;
+
+}
+
+.wrapper-hero-content {
+     display: flex;
+     flex-direction: column;
+     gap: 24px;
+}
+
+.wrapper-hero-content h1 {
+     font-size: 47px;
+     font-weight: 700;
+}
+
+.wrapper-hero-content p {
+     font-size: 16px;
+     font-weight: 400;
+}
+.wrapper-hero-button {
+  display: flex;              
+  flex-direction: row;        
+  align-items: center;        
+  justify-content: flex-start;
+  gap: 24px;                  
+}
+
+.wrapper-hero-button button {
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.2s ease-in-out;
+}
+
+/* Tombol Authors */
+.wrapper-hero-button .authors {
+  background: #0062FF;
+  color: white;
+  width: 120px;
+  height: 42px;
+}
+
+.wrapper-hero-button .authors:hover {
+     background: #2203E4;
+}
+
+/* Tombol Check demo */
+.wrapper-hero-button .check-demo {
+  background: transparent;
+  color: #575757;
+  border: 2px solid #575757;
+  width: 120px;
+  height: 42px;
+}
+
+.wrapper-hero-button .check-demo:hover{
+background: #575757;
+color: white;
+}
